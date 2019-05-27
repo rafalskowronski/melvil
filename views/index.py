@@ -193,7 +193,8 @@ def search():
                                    pagination=paginate_query,
                                    endpoint='library.search',
                                    admin=admin,
-                                   form=form, )
+                                   form=form,
+                                   query_str=query_str )
         else:
             abort(405)
 

@@ -26,6 +26,8 @@ services:
         - DB_PORT=5432
         - DB_ENGINE=postgresql
         - ENV=prod
+    ports:
+        - "80:80"
     depends_on:
       - "postgresql"
     container_name: melvil_web_prod
